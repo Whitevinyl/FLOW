@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+        <title>F L O W</title>
+
+        <script type="text/javascript" src="js/lib/stats.min.js"></script>
+        <script type="text/javascript" src="js/lib/tombola.js"></script>
+        <script type="text/javascript" src="js/lib/colorflex.js"></script>
+        <script type="text/javascript" src="js/lib/canvas-noise.js"></script>
+        <script type="text/javascript" src="js/lib/perlin-simplex.js"></script>
+
+
+
+        <script type="text/javascript" src="js/UTILS.js"></script>
+        <script type="text/javascript" src="js/TEXTURE.js"></script>
+        <script type="text/javascript" src="js/MAIN.js"></script>
+        <script type="text/javascript" src="js/METRICS.js"></script>
+        <script type="text/javascript" src="js/INTERACTION.js"></script>
+
+        <link href="STYLE.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lora|PT+Sans:i400" rel="stylesheet">
+
+    </head>
+
+
+    <body onload="init()" onresize="metrics()">
+
+        <canvas id="canvas"></canvas>
+
+        <div id='noiseLayer'></div>
+
+        <div id='overlay' class='unselectable'>
+            <div id='tt'>Flow</div>
+            <div id='line'></div>
+        </div>
+
+        <div id='creator'>
+            <a href='http://whitevinyldesign.com' target='_blank'>by Wvnl</a>
+            <div class='divide'></div>
+            <a href='https://github.com/Whitevinyl?tab=repositories' target='_blank'>github</a>
+        </div>
+
+
+
+    </body>
+</html>
