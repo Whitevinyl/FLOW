@@ -95,6 +95,9 @@ var palettes = [
 
 function init() {
 
+    // SETUP EXPERIMENT //
+    setupExperiment();
+
     // SETUP CANVAS //
     canvas = document.getElementById('canvas');
     ctx = canvas.getContext('2d');
@@ -169,7 +172,9 @@ function loop() {
 //-------------------------------------------------------------------------------------------
 
 function update() {
-
+    if (experiment) {
+        experiment.update();
+    }
 }
 
 
