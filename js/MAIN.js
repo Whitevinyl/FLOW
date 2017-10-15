@@ -26,19 +26,6 @@ var imgData;
 
 var addNoise = false;
 
-// 3 white/cream
-// 4 dark
-// 5 // light pink bubblegum
-// 6 // light pink cream
-// 7 gold cream
-// 8 red
-// 9 dark purple
-// 10 pink
-// 11 purple
-// 12 turquoise
-// 13 grey
-// 14 magenta
-// 15 yellow cream
 
 color.lowPass = new RGBA(50,45,25,0);
 
@@ -48,14 +35,12 @@ var palettes = [
     [textureCol2[0], textureCol[10], textureCol2[1]], // dark > pink > grey/green
     [textureCol2[0], textureCol2[3], textureCol[15]], // flesh > gold
     [textureCol2[0], textureCol2[1], textureCol2[2]], // dark green > yellow
-    //[textureCol2[0], textureCol[11], textureCol2[2]], // purple > yellow * do i actually like this
     [textureCol[4], textureCol2[1], textureCol[10]], // petrel > pink
     [textureCol[4], textureCol[9], textureCol[11]], // dark > purple
     [textureCol[4], textureCol2[0], textureCol[11]], // extra dark > purple
     [textureCol[4], textureCol[11], textureCol[12]], // purple > turquoise
     [textureCol2[1], textureCol[14], textureCol[10]], // dark > red
     [textureCol[9], textureCol[10], textureCol[12]], // dark purple > flesh  > turquoise
-    //[textureCol2[0], textureCol[10], textureCol[12]], // dark > flesh > turquoise * might be bit much
     [textureCol2[1], textureCol[10], textureCol[12]], // dark > flesh > turquoise
     [textureCol[4], textureCol[9], textureCol[14]], // dark purple > magenta
     [textureCol[4], textureCol[9], textureCol[12]], // dark > turquoise
@@ -73,9 +58,7 @@ var palettes = [
     [textureCol[3], textureCol[13], textureCol[9]],  // white grey > dark purple
     [textureCol[4], textureCol[9], textureCol2[1]],  // dark green > blue
     [textureCol[3], textureCol2[0], textureCol[4]],  // white > dark
-    //[textureCol[3], textureCol[7], textureCol2[0]],  // white > caramel > dark * not sure
     [textureCol2[0], textureCol2[1], textureCol[7]], // dark green > gold
-    //[textureCol[4], textureCol2[1], textureCol[7]], // dark green > gold 2 **
     [textureCol2[0], textureCol[9], textureCol[5]], // navy > bubblegum pink
     [textureCol[6], textureCol[13], textureCol[10]], // pale pink > grey coral
     [textureCol[4], textureCol2[0], textureCol[15]], // dark > cream
@@ -107,7 +90,7 @@ function init() {
     metrics();
 
     // INTERACTION //
-    setupInteraction();
+    //setupInteraction();
 
     // STATS //
     //initStats();
@@ -141,7 +124,6 @@ function resetPaint() {
     lastPalette = ind;
     console.log(ind);
 
-    // p[0], p[1], p[2]
     paint = new Paint(ctx, width, height, tombola.rangeFloat(0.6, 2), p[0], p[1], p[2], 0.05, 0.3);
 }
 
